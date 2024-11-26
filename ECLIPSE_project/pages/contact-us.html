@@ -16,36 +16,50 @@
   <body>
     <!-- navbar starts -->
     <section>
-      <nav class="navbar bg-dark">
-        <a href="#" class="brand-name">
-          <span><i class="fa-regular fa-sun" style="color: white;"></i>ECLIPSE STUDIOS</span>
-        </a>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+          <span><i class="fa-regular fa-sun"></i>ECLIPSE STUDIOS</span>
 
-        <div class="eclipse-row">
-          <div class="eclipse-items">
-            <ul>
-              <li>
-                <a href="../index.html">HOME</a>
+          </a>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="fa-solid fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html" aria-current="page"
+                  >Home <span class="visually-hidden">(current)</span></a
+                >
               </li>
-              <li>
-                <a href="about.html">ABOUT</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/about.html">About</a>
               </li>
-              <li>
-                <a href="services.html">SERVICES & BOOKINGS</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/services.html">Service & Bookings</a>
               </li>
-              <li>
-                <a href="contact-us.html">CONTACT US</a>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contact-us.html">Contact Us</a>
               </li>
             </ul>
+           
           </div>
         </div>
       </nav>
-    </section>
+
     <!-- navbar ends -->
 
     <section>
       <div class="container my-5">
-        <div class="card mx-auto" style="max-width: 700px">
+        <div class="card pt-4 mt-4 mx-auto" style="max-width: 700px">
           <div class="card-body bg-dark">
             <form action="">
               <div class="mb-2">

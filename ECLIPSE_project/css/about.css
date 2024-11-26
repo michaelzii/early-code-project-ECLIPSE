@@ -1,33 +1,15 @@
-
-.navbar{
-    display: flex;
-    align-items: center;
-}
-
-.navbar > .brand-name{
+.navbar .navbar-brand{
     text-decoration: none;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Lilita One", sans-serif;
     color: black;
     padding-left: 20px;
-}
-
-.navbar > .eclipse-row >.eclipse-items ul{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    padding-right: 20px;
-}
-
-.navbar > .eclipse-row > .eclipse-items ul a{
+} 
+.navbar .navbar-nav  a{
     text-decoration: none;
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.navbar > .eclipse-row > .eclipse-items ul a:hover{
-    color: grey;
 }
 
 /* NAVBAR ENDS */
@@ -98,7 +80,7 @@
     width: 100%;
     background-position: top;
     height: 32rem;
-    background-size: cover;
+    object-fit: cover;
     text-align: center;
     padding-top: 9rem;
 }
@@ -144,15 +126,15 @@
     background-image: url(../images/about-1.jpg);
     width: 100%;
     height: 34rem;
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    object-fit: cover;
     margin-top: 50px;
 }
 
 .abs-us h1{
-    padding-top: 70px;
+    padding-top: 60px;
     font-weight: bold;
     font-size: 5rem;
     color: rgba(98, 101, 104, 0.911);
@@ -173,7 +155,7 @@
 
 .abs-lite{
     background-image: url(../images/sogood.jpg);
-    background-size: cover;
+    object-fit: cover;
     background-position: center;
     width: 100%;
     height: 34rem;
@@ -194,4 +176,87 @@
     font-size: 19px;
     font-weight: 400;
     font-family: "Baskervville", serif
+}
+
+/* media query */
+@media screen and (max-width: 452px){
+    .navbar .navbar-brand{
+        font-size: 1.2rem;
+    }
+
+    .about-us{
+        height: 25rem;
+    }
+
+    .about-us h1{
+        font-size: 40px;
+    }
+
+    .yap-header h3{
+        font-size: 11px;
+    }
+
+    .yap-header p{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .abs-us{
+        height: 25rem;
+    }
+
+    .abs-us h1{
+        font-size: 40px;
+        color: rgb(81, 105, 126);
+        padding-top: 2px;
+
+    }
+
+    .extra-yap p{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .abs-lite{
+        height: 25rem;
+    }
+
+    .abs-lite h1{
+        font-size: 35px;
+        text-align: start;
+    }
+
+    .extra-yappy p{
+        font-size: 15px;
+        text-align: center;
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-container{
+        width: 100%;
+    }
+
+    .social-icons a i{
+        font-size: 20px;
+    }
+
+    .footer-nav ul li a{
+        font-size: 15px;
+    }
+
+    .footer-bottom p{
+        font-size: 13px;
+    }
+
+    .footer-container{
+        font-size: 15px;
+    }
 }

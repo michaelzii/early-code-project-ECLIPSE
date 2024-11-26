@@ -4,40 +4,24 @@
     padding: 0;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-}
 
-.navbar > .brand-name{
+.navbar .navbar-brand{
     text-decoration: none;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Lilita One", sans-serif;
     color: black;
     padding-left: 20px;
-}
-
-.navbar > .eclipse-row >.eclipse-items ul{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    padding-right: 20px;
-}
-
-.navbar > .eclipse-row > .eclipse-items ul a{
+} 
+.navbar .navbar-nav  a{
     text-decoration: none;
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.navbar > .eclipse-row > .eclipse-items ul a:hover{
-    color: grey;
-}
-
-/* navbar editing ends */
 
 /* hero and carousel section starts */
+
 .carousel .carousel-caption h1{
     font-size: 4rem;
     font-family: "Baskervville", serif
@@ -56,9 +40,14 @@
 }
 
 .carousel .carousel-item img{
-    width: 40% 50%;
-    background-size: cover;
-    height: 47rem;
+    height: 42rem;
+    object-fit: cover;
+}
+
+.carousel .carousel-caption * {
+    color: #ffffff !important;
+    text-shadow: -3px 5px 10px #000000;
+    -webkit-text-stroke: 1px #00000071;
 }
 
 /* carousel 1 ends */
@@ -222,18 +211,15 @@
 
 /* media query */
 @media screen and (max-width: 452px){
-    .navbar > .eclipse-row .eclipse-items{
-        display: none;
+    
+    .navbar .navbar-brand{
+        font-size: 1.2rem;
     }
 
-    .navbar .brand-name{
-        font-size: 40px;
-        text-align: center;
-    }
 
+    
     .hero > .carousel .carousel-item img{
-        justify-content: center;
-        width: 40% 50%;
+        height: 40rem;
     }
 
     .client{

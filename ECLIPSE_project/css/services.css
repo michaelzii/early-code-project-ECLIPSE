@@ -1,33 +1,16 @@
 
-.navbar{
-    display: flex;
-    align-items: center;
-}
-
-.navbar > .brand-name{
+.navbar .navbar-brand{
     text-decoration: none;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Lilita One", sans-serif;
-    color: white;
+    color: black;
     padding-left: 20px;
-}
-
-.navbar > .eclipse-row >.eclipse-items ul{
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-    padding-right: 20px;
-}
-
-.navbar > .eclipse-row > .eclipse-items ul a{
+} 
+.navbar .navbar-nav  a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
-.navbar > .eclipse-row > .eclipse-items ul a:hover{
-    color: grey;
 }
 /* NAVBAR ENDS */
 
@@ -95,7 +78,8 @@
 .topz h1{
     text-align: center;
     font-size: 4rem;
-    padding: 40px;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
     font-family: "Baskervville",serif;
 }
 
@@ -113,6 +97,7 @@
 
 .imports img{
     width: 88%;
+    object-fit: cover;
 }
 
 .imports > .captionz{
@@ -179,14 +164,7 @@
     font-family: "Rubik Mono One", serif;
 }
 
-.import{
-    display: grid;
-    justify-content: center;
-}
 
-.import img{
-    width: 60%;
-}
 
 .import > .amtt{
     font-weight: lighter;
@@ -210,4 +188,79 @@
     text-align: center;
     font-size: 4rem;
     font-family: "Rubik Mono One",serif;
+}
+
+/* media query */
+@media screen and (max-width: 452px){
+    .navbar .navbar-brand{
+        font-size: 1.2rem;
+    }
+
+    .topz h1{
+        display: none;
+        padding-top: 40px;
+    }
+
+    .pass h1{
+        font-size: 2rem;
+        text-align: center;
+        padding-left: 3rem;
+        padding-top: 5rem;
+    }
+
+    .sales button{
+        font-size: 17px;
+    }
+
+    .fam{
+        padding-top: 60px;
+        justify-content: center;
+    }
+    .fam h1{
+        font-size: 2rem;
+        padding-top: 2px;
+    }
+
+    .imports img{
+        width: 100%;
+    }
+
+    .sing h1{
+        font-size: 2rem;
+    }
+
+    .vidz h1{
+        font-size: 2rem;
+        padding-left: 40px;
+    }
+
+    .passp h1{
+        font-size: 2rem;
+        padding-left: 35px;
+    }
+
+    .shop h1{
+        font-size: 2rem;
+        padding-left: 20px;
+    }
+
+    .footer-container{
+        width: 100%;
+    }
+
+    .social-icons a i{
+        font-size: 20px;
+    }
+
+    .footer-nav ul li a{
+        font-size: 15px;
+    }
+
+    .footer-bottom p{
+        font-size: 13px;
+    }
+
+    .footer-container{
+        font-size: 15px;
+    }
 }
