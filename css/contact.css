@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+nav form .btn{
+    background: black;
+}
+
+nav form a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+.container{
+    min-height: 10vh;
+    background-image: url(../img/map-bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.card{
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(../img/services-bg.jpg);
+    /* background-position-x: center; */
+    /* background-position-y: top; */
+    background-position: center top;
+    height: auto;
+    padding: 40px;
+    /* margin: 0 auto; */
+    /* padding-bottom: 40px; */
+}
+
+.card input{
+    border-color: aqua;
+}
+
+.card input:hover{
+    border-color: blue;
+}
+
+.card textarea{
+    border-color: aqua;
+}
+
+.card textarea:hover{
+    border-color: blue;
+}
+
+.card .btn{
+    transition: all .3s ease-in-out;
+}
+
+.card .btn:hover{
+    background-color: rgb(54, 89, 231);
+    transform: translateY(-3px);
+}
+
+.card h1{
+    text-align: center;
+}
+
+.card .icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+    transition: all .3s ease-in-out;
+}
+
+.card a:hover{
+    color: blue;
+    transform: translateY(-3px);
+}
+
+
+@media screen and (max-width: 426px){
+    .contact-img{
+        display: none;
+    }
+    
+    .container{
+        /* min-height: 100vh; */
+        background-image: url(../img/map-bg.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    
+    }
+
+    .card{
+        width: 100%;
+        /* max-width: 900px; */
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: url(../img/services-bg.jpg);
+        background-size: cover;
+        background-position: center top;
+        height: auto;
+        padding: 20px;
+        /* margin: 0 auto; */
+        /* padding-bottom: 40px; */
+    }
+
+}
+
+
+@media screen and (min-width: 425px) and (max-width: 992px){
+    .contact-img{
+        display: none;
+    }
+    
+    .container{
+        /* min-height: 100vh; */
+        background-image: url(../img/map-bg.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    
+    }
+
+    .card{
+        width: 100%;
+        /* max-width: 900px; */
+        display: grid;
+        grid-template-columns: 1fr;
+        background-image: url(../img/services-bg.jpg);
+        background-size: cover;
+        background-position: center top;
+        height: auto;
+        padding: 20px;
+        /* margin: 0 auto; */
+        /* padding-bottom: 40px; */
+    }
+}

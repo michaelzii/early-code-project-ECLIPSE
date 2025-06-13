@@ -1,0 +1,63 @@
+body{
+    background: black;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.sign .card{
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    background-image: url(../img/bg-bg.jpg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+
+
+.card input:hover{
+    border: 2px solid aqua;
+}
+
+.card h1{
+    text-align: center;
+    color: aliceblue;
+}
+
+.card button{
+    margin-top: 4px;
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-weight: 500;
+}
+
+.card button:hover{
+    background: rgb(29, 241, 220);
+    color: black;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+form .btn{
+    background: black;
+}
+
+form a{
+    text-decoration: none;
+    color: aliceblue;
+}

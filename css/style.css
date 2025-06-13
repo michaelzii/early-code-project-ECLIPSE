@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+
+form .btn{
+    background: black;
+}
+
+form a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+/* hero 1 */
+.hero{
+    /* position: relative; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 0 14%;
+    gap: 6px;
+    transition: all 2s ease;
+    background-image: url(../img/L-I-D-R-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 200rem;
+    height: 41.8rem;
+    background-size: contain;
+    background-position: center;
+}
+
+.hero-text h1{
+    font-weight: 900;
+    font-size: 3.3rem;
+}
+
+.hero-text p{
+    font-size: smaller;
+}
+
+.hero-text .icons{
+    display: flex;
+    justify-content: start;
+    gap: 4rem;
+}
+
+.icons a{
+    color: aliceblue;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.icons a:hover{
+    color: gray;
+    transform: translateY(-3px);
+}
+
+/* her0 2 */
+.adverts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-image: url(../img/bg.jpg);
+    /* background-size: 36rem; */
+}
+
+.adverts .map img{
+    border-radius: 70px;
+    padding: 40px;
+}
+
+.adverts .yaps{
+    color: aliceblue;
+    font-weight: 500;
+    /* margin-top: 10rem; */
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 2rem;
+}
+
+.card-container{
+    display: grid;
+    row-gap: 3.5rem;
+}
+
+.card-article{
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img{
+    width: 328px;
+    border-radius: 1.5rem;
+    background-position: bottom;
+}
+
+.card-data{
+    width: 500px;
+    background-color: rgb(49, 52, 51);
+    padding: 1.5rem 2rem;
+    margin-left: 1rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0% .15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    /* margin-inline: auto; */
+    opacity: 0;
+    transition: opacity 1s 1s 0;
+}
+
+.card-description{
+    display: block;
+    font-size: 15px;
+    margin-bottom: .25rem;
+    color: aliceblue;
+}
+
+.card-title{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: aliceblue;
+    margin-bottom: .75rem;
+}
+
+.card-button{
+    text-decoration: none;
+    font-size: 15px;
+    color: aqua;
+}
+
+.card-button:hover{
+    text-decoration: underline;
+}
+
+.card-article:hover .card-data{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.card-article:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+.card-article:not(:hover){
+    animation: show-overflow 2s forwards;
+}
+
+.card-article:not(:hover) .card-data{
+    animation: remove-data 1s forwards;
+}
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(-7rem);
+    }
+}
+
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data{
+    0%{
+        transform: translateY(-7rem);
+    }
+    50%{
+        transform: translateY(-10rem);
+    }
+    100%{
+        transform: translateY(.5rem);
+    }
+}
+
+@keyframes show-overflow{
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+
+.closing{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* background-color: rgb(85, 82, 74); */
+}
+
+.mission{
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all .4s ease;
+}
+
+.vision{
+    font-weight: 500;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    transition: all .4s ease;
+
+}
+
+.motivation{
+    font-weight: 500;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all .4s ease;
+
+}
+
+.title{
+    color: aliceblue;
+    font-weight: 500;
+
+}
+
+.description{
+    font-weight: 700;
+    color: aliceblue;
+}
+
+.mission:hover{
+    border: 2px solid;
+    background-color: rgb(49, 75, 74);
+    border-radius: 10px;
+}
+
+.vision:hover{
+    border: 2px solid;
+    background-color: rgb(50, 109, 91);
+    border-radius: 10px;
+}
+
+.motivation:hover{
+    border: 2px solid;
+    background-color: rgb(51, 86, 47);
+    border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 426px){
+
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .hero{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin: auto;
+        background-size: cover;
+        padding: 15px;
+        max-width: 100%;
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+    }
+
+    .hero-text h1{
+        font-size: 1.3rem;
+    }
+
+    .hero-text p{
+        font-size: 0.4rem;
+    }
+
+    .hero-text .icons{
+        gap: 18px;
+    }
+
+    .icons a{
+        font-size: 7px;
+    }
+
+    .hero .hero-img img{
+        max-width: 140px;
+        height: 200px;
+    }
+
+
+    .adverts{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+        padding: 0;
+    }
+
+    .adverts .yaps{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+
+    .closing{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+    .card-data{
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+
+
+
+
+@media screen and (min-width: 425px) and (max-width: 700px){
+    
+    
+    .hero{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin: auto;
+        background-size: cover;
+        padding: -80px;
+        max-width: 100%;
+        width: 100%;
+        height: 220px;
+        box-sizing: border-box;
+    }
+
+    .hero-text h1{
+        font-size: 1.5rem;
+    }
+
+    .hero-text p{
+        font-size: 0.5rem;
+    }
+
+    .hero-text .icons{
+        gap: 18px;
+    }
+
+    .icons a{
+        font-size: 10px;
+    }
+
+    .hero .hero-img img{
+        max-width: 170px;
+        height: 200px;
+    }
+
+    
+    .adverts{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: fit-content;
+        padding: 0;
+    }
+
+    .adverts .yaps{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    .closing{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px){
+    .hero{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin: auto;
+        background-size: cover;
+        padding: -80px;
+        max-width: 100%;
+        width: 100%;
+        height: 370px;
+        box-sizing: border-box;
+    }
+
+    .hero-text h1{
+        font-size: 3rem;
+    }
+
+    .hero-text p{
+        font-size: 0.8rem;
+    }
+
+    .adverts{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: fit-content;
+        padding: 0;
+    }
+
+    .adverts .yaps{
+        font-size: 18px;
+        text-align: center;
+        margin: auto;
+    }
+
+    
+    .closing{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1025px){
+    .hero{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        margin: auto;
+        background-size: cover;
+        padding: -80px;
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+    }
+
+    .adverts .yaps{
+        font-size: 18px;
+        text-align: center;
+        padding: 20px;
+        margin: auto;
+    }
+}
